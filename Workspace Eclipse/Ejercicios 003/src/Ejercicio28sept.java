@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 /**
- * Ejercicio de suma aritmética de dos números en base octal
+ * Ejercicio de suma aritmetica de dos numeros en base octal
  * 
  * @param dos numeros en base octal
  * @Autor Cristian Roca Flores
@@ -15,21 +15,21 @@ public class Ejercicio28sept {
 		boolean llevada = false;
 
 		do {
-			System.out.print("Introduce el primer número en base octal: ");
+			System.out.print("Introduce el primer numero en base octal: ");
 			n1 = teclado.nextLong();
-			System.out.println("Introduce el segundo número en base octal: ");
+			System.out.println("Introduce el segundo numero en base octal: ");
 			n2 = teclado.nextLong();
 			if (esOctal(String.valueOf(n1)) && esOctal(String.valueOf(n2))) {
 				System.out.println("Comprobando si son octales..");
 				Thread.sleep(2000);
-				System.out.println("Ambos números son correctos, sumando...");
+				System.out.println("Ambos nï¿½meros son correctos, sumando...");
 			} else {
 				if (!esOctal(String.valueOf(n1))) {
-					System.out.println("Error: El primer número no están en base octal");
+					System.out.println("Error: El primer numero no esta en base octal");
 					System.exit(-1);
 				}
 				if (!esOctal(String.valueOf(n2))) {
-					System.out.println("Error: El segundo número no están en base octal");
+					System.out.println("Error: El segundo numero no esta en base octal");
 					System.exit(-1);
 				}
 			}
@@ -49,6 +49,9 @@ public class Ejercicio28sept {
 		System.out.println("La suma es " + sum + " ");
 	}
 
+	
+	
+	//Funcion privada para verificar si son octales o no (con expresion regular)
 	private static boolean esOctal(String octal) {
 		String esOctal = octal;
 		return esOctal.matches("^[0-7]+$");
