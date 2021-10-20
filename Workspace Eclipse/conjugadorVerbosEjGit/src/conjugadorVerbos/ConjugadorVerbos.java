@@ -1,4 +1,4 @@
-package conjugadorVerbos;
+package conjugadorVerbosEjGit;
 
 import java.util.Scanner;
 
