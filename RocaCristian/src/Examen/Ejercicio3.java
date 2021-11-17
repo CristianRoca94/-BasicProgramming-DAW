@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 import javax.swing.JOptionPane;
 
+
 public class Ejercicio3 {
 
 	public static void main(String args[]) {
@@ -19,14 +20,14 @@ public class Ejercicio3 {
 		}
 		int[][] matrizsubT = Traspuesta(matriz);
 		if (equals(matriz, matrizsubT)) {
-			JOptionPane.showMessageDialog(null, "La matriz es simétrica");
+			JOptionPane.showMessageDialog(null, "La matriz es simetrica");
 		} else {
-			JOptionPane.showMessageDialog(null, "La matriz NO es simétrica");
+			JOptionPane.showMessageDialog(null, "La matriz NO es simetrica");
 		}
 
 	}
 
-	// Método para conseguir la matriz traspuesta
+	// Metodo para conseguir la matriz traspuesta
 	public static int[][] Traspuesta(int[][] matriz) {
 
 		int[][] matrizsubT = new int[matriz[0].length][matriz.length];
@@ -39,7 +40,7 @@ public class Ejercicio3 {
 		return matrizsubT;
 	}
 
-	// Método para comprobar dos matrices
+	// Metodo para comprobar dos matrices
 	public static boolean equals(int[][] m1, int[][] m2) {
 		if (Arrays.deepEquals(m1, m2))
 			return true;
